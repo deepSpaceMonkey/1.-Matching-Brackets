@@ -16,7 +16,7 @@ int main(void) {
     //Open file and check if empty
     ptr_file = fopen("../fake_picture.txt", "r");     // "./" is important!!!!
     if (ptr_file == NULL) {
-        printf("error. file is null");
+        printf("error. file is empty");
         return 0;
     }
 
@@ -31,8 +31,14 @@ int main(void) {
     while ((charFromFile = fgetc(ptr_file)) != EOF) {     //First line received and placed in txtFileString
 
         if (charFromFile == '[' || charFromFile == '(') {
+            if(isFull(*txtFileStack)){
+                printf("Your equation is too big!");
+                return 2;
+            }
             push(charFromFile, txtFileStack);
-        } else if (charFromFile == ']') {
+
+        }
+        else if (charFromFile == ']') {
             poppedChar = pop(txtFileStack);
             if (poppedChar != '[') {
                 printf("Missing  ) \n");
@@ -56,5 +62,7 @@ int main(void) {
     else{
         printf("Valid expression");
     }
+
+    deallocate(txtFileStack);
     return 0;
 }

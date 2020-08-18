@@ -44,3 +44,5 @@ void push(StackEntry e,Stack312* s);
 //Inputs: 1. pointer to stack
 //Outputs: 1. value popped from stack
 StackEntry pop(Stack312* s);
+
+void deallocate(Stack312* s);

@@ -1,4 +1,6 @@
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "stack_arr.h"
 
 
@@ -47,6 +49,12 @@ StackEntry pop(Stack312* s){
     else{
         return 'y';
     }
+}
+
+void deallocate(Stack312* s){
+    //int i;
+    free(s);
+    //realloc(s, sizeof(Stack312));
 }
 
 
