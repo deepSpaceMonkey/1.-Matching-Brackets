@@ -31,6 +31,6 @@ PsuedoCode:
 
 How You Can Use This:
 
-     1. Add your own equation by editing the txt file called fake_picture.txt
+     1. Add your own equation by editing the txt file called equation.txt
      2. See if you can implment this using Linked Lists instead of arrays
      3. Try comparing multipule equations together
