@@ -29,7 +29,7 @@ PsuedoCode:
      7. Edge cases for no brackets/parenthesis and exceeding MAX_LIMIT
      
 
-How You Can Use This:
+How You Can Use This and Possible Improvements:
 
      1. Add your own equation by editing the txt file called equation.txt
      2. See if you can implment this using Linked Lists instead of arrays
