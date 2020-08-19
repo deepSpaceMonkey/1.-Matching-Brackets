@@ -1,4 +1,4 @@
-# 1.-Stack-Fun
+# 1.-Matching-Brackets
 Determine symmetry of brackets in equation using stacks
 
 Snippet:
